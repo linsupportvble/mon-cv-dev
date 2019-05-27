@@ -323,7 +323,7 @@ button:focus {
         max-width: 680px;
         font-size: 14px;
         line-height: 26px;
-        margin: 0px auto 45px; }
+        margin: 0px auto 15px; }
       .home_banner_area .banner_inner .banner_content .banner_map_img {
         text-align: right; }
 
@@ -2552,8 +2552,11 @@ h6 {
     color: #fff; }
 
 .banner_btn {
+  margin: 5px 0px;
   padding: 0px 42px;
   line-height: 50px;
+  border: none; 
+  cursor: pointer;
   background-image: linear-gradient(to right, #8490ff 0%, #62bdfc 48%, #8490ff 100%);
   background-size: 200% auto;
   color: #fff;

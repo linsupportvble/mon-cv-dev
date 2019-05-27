@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
@@ -17,6 +17,8 @@
         <!-- main css -->
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.54.0/mapbox-gl.css' rel='stylesheet' />
     </head>
     <body>
         
@@ -63,8 +65,21 @@
         <!--================End Home Banner Area =================-->
         
         <!--================Contact Area =================-->
+        
+       
+
         <section class="contact_area p_120">
+            
             <div class="container">
+               <div id='map' style='width: 1000px; height: 350px;'></div>
+        <script>
+            mapboxgl.accessToken = 'pk.eyJ1IjoibGluc3VwcG9ydHZibGUiLCJhIjoiY2p3NjEzdTB6MXN0MzN5cGw2bG9ia3drMCJ9.7-3g3sS-l2qVEPg8WAlIzA';
+            var map = new mapboxgl.Map({
+                container: 'map',
+                style: 'mapbox://styles/mapbox/streets-v11'
+            });
+        </script>
+<!--
                 <div id="mapBox" class="mapBox" 
                     data-lat="43.1373" 
                     data-lon="5.98248000000001" 
@@ -73,6 +88,7 @@
                     data-mlat="43.1373"
                     data-mlon="5.98248000000001">
                 </div>
+-->
                 <div class="row">
                     <div class="col-lg-3">
                         <div class="contact_info">
@@ -124,15 +140,15 @@
         <!--================Contact Area =================-->
         
         <!--================Footer Area =================-->
-        <footer class="footer_area p_120">
+       <footer class="footer_area p_120">
         	<div class="container">
         		<div class="row footer_inner">
         			<div class="col-lg-5 col-sm-6">
         				<aside class="f_widget ab_widget">
         					<div class="f_title">
-        						<h3>About Me</h3>
+        						<h3>A propos de moi</h3>
         					</div>
-        					<p>Développeur débutant en formation depuis le 20 mars 2019 au centre de l'Afpa La Valette du Var, </p>
+        					<p>Développeur débutant en formation depuis le 20 mars 2019 au centre de l'Afpa La Valette du Var. </p>
         					<p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 <!--Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>-->
 <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
@@ -142,9 +158,9 @@
         			<div class="col-lg-5 col-sm-6">
         				<aside class="f_widget news_widget">
         					<div class="f_title">
-        						<h3>Info</h3>
+        						<h3>Informations</h3>
         					</div>
-        					<p>Ce profil sera mis à jour au fur et à mesure de ma progression en tant que dev web </p>
+        					<p>Ce profil sera mis à jour au fur et à mesure de ma progression en tant que dev web. </p>
 <!--
         					<div id="mc_embed_signup">
                                 <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
@@ -161,9 +177,9 @@
         			<div class="col-lg-2">
         				<aside class="f_widget social_widget">
         					<div class="f_title">
-        						<h3>Follow Me</h3>
+        						<h3>Suivez-moi</h3>
         					</div>
-        					<p>Let us be social</p>
+        					<p>Réseaux sociaux</p>
         					<ul class="list">
         						<li><a href="https://www.facebook.com/profile.php?id=100013030306251&ref=bookmarks"><i class="fa fa-facebook"></i></a></li>
         					</ul>
