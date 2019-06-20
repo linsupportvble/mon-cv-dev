@@ -301,6 +301,7 @@ button:focus {
       vertical-align: middle;
       align-self: center; }
     .home_banner_area .banner_inner .banner_content {
+      margin-top: 45%;
       text-align: left;
       color: #222222; }
       .home_banner_area .banner_inner .banner_content h5 {
@@ -2830,6 +2831,9 @@ h6 {
 /*----------------------------------------------------*/
 /* Projects Area css
 ============================================================================================ */
+.row_contact{
+  margin-left: 20%;
+}
 .projects_fillter .filter {
   text-align: center;
   margin-top: 70px;
