@@ -584,7 +584,34 @@ pre code {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    
+}
+.containe {
+    margin-right: 500px;
+    margin-left: 500px;
+}
+.containerComp {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex
+}
+.welcome_area>h3{
+    text-align: center;
+    color: #222222;
+    font-family: "Heebo", sans-serif;
+    font-size: 36px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+}
+.welcome_area>h4{
+    text-align: center;
+    color: #222222;
+    font-family: "Heebo", sans-serif;
+    font-size: 50px;
+    margin-bottom: 18px;
+    text-transform: uppercase;
 }
 
 @media (min-width:576px) {
@@ -625,8 +652,11 @@ pre code {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin-right: -15px;
-    margin-left: -15px
+    margin-left: -15px;
+    align-items: center;
+    justify-content: center;
 }
+.paragraphe{}
 
 .no-gutters {
     margin-right: 0;
@@ -1308,7 +1338,11 @@ pre code {
     .col-lg-6 {
         -ms-flex: 0 0 50%;
         flex: 0 0 50%;
-        max-width: 50%
+        width: 100%
+    }
+    .col{
+        width: 100%;
+
     }
     .col-lg-7 {
         -ms-flex: 0 0 58.333333%;
